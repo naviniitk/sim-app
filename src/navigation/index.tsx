@@ -16,7 +16,7 @@ const Stack = createStackNavigator<RootStackParamList>();
 export default function RootStack() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Overview">
+      <Stack.Navigator initialRouteName="Overview" screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Overview" component={Overview} />
         <Stack.Screen
           name="Details"
